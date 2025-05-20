@@ -1,0 +1,20 @@
+# ProjectFeedback
+
+Dit project is bedoeld om een systeem te ontwikkelen voor het verzamelen en beheren van feedback op projecten.
+
+## Doel
+Het doel van dit project is om een eenvoudig te gebruiken platform te creëren waar gebruikers feedback kunnen geven op projecten, en waar projecteigenaren deze feedback kunnen bekijken en beheren.
+
+## Functionaliteiten
+- Gebruikers kunnen zich registreren en inloggen
+- Projecteigenaren kunnen projecten aanmaken
+- Gebruikers kunnen feedback geven op projecten
+- Projecteigenaren kunnen feedback bekijken en beheren
+- Gebruikers kunnen reageren op feedback
+- Notificaties voor nieuwe feedback en reacties
+
+## Technische Stack
+- Frontend: HTML, CSS, JavaScript (React)
+- Backend: Node.js met Express
+- Database: MongoDB
+- Authenticatie: JWT
