@@ -1,0 +1,122 @@
+# ProjectFeedback - Project Informatie
+
+## Projectoverzicht
+ProjectFeedback is een webapplicatie die gebruikers in staat stelt om feedback te geven op projecten en projecteigenaren helpt om deze feedback te beheren. Het platform biedt een gebruiksvriendelijke interface voor het indienen, bekijken en reageren op feedback, waardoor de communicatie tussen projecteigenaren en gebruikers wordt verbeterd.
+
+## Architectuur
+De applicatie volgt een moderne client-server architectuur met de volgende modulestructuur:
+
+### Frontend Modules
+1. **UI Components Module**
+   - Bevat herbruikbare UI-componenten zoals knoppen, formulieren, modals, etc.
+   - Implementeert een consistent ontwerp in de hele applicatie
+
+2. **Authentication Module**
+   - Beheert gebruikersregistratie, login en sessies
+   - Implementeert JWT-authenticatie voor beveiligde API-toegang
+
+3. **Project Management Module**
+   - Stelt gebruikers in staat om projecten te bekijken, aan te maken en te beheren
+   - Biedt functionaliteit voor het categoriseren en filteren van projecten
+
+4. **Feedback Module**
+   - Stelt gebruikers in staat om feedback te geven op projecten
+   - Biedt functionaliteit voor het reageren op feedback
+   - Implementeert een beoordelingssysteem voor feedback
+
+5. **Notification Module**
+   - Beheert notificaties voor nieuwe feedback, reacties en updates
+   - Biedt in-app en e-mailnotificaties
+
+### Backend Modules
+1. **API Module**
+   - Implementeert RESTful API-endpoints voor alle frontend-functionaliteiten
+   - Zorgt voor gegevensvalidatie en foutafhandeling
+
+2. **Authentication Service**
+   - Beheert gebruikersauthenticatie en autorisatie
+   - Genereert en valideert JWT-tokens
+
+3. **Database Service**
+   - Beheert databaseverbindingen en -operaties
+   - Implementeert datamodellen en relaties
+
+4. **Notification Service**
+   - Verwerkt het verzenden van notificaties
+   - Beheert notificatievoorkeuren van gebruikers
+
+5. **Analytics Service**
+   - Verzamelt en analyseert gebruiksgegevens
+   - Genereert rapporten over feedback-trends
+
+## Module Details
+
+### UI Components Module
+- **Status**: Gepland
+- **Bestandsnaam**: ui-components.js
+- **Pad**: /frontend/src/components/
+- **Functionaliteit**: Bevat React-componenten voor de gebruikersinterface
+- **Afhankelijkheid**: Geen
+
+### Authentication Module (Frontend)
+- **Status**: Gepland
+- **Bestandsnaam**: auth.js
+- **Pad**: /frontend/src/services/
+- **Functionaliteit**: Beheert authenticatie aan de clientzijde
+- **Afhankelijkheid**: UI Components Module
+
+### Project Management Module (Frontend)
+- **Status**: Gepland
+- **Bestandsnaam**: projects.js
+- **Pad**: /frontend/src/services/
+- **Functionaliteit**: Beheert projectgerelateerde operaties aan de clientzijde
+- **Afhankelijkheid**: Authentication Module, UI Components Module
+
+### Feedback Module (Frontend)
+- **Status**: Gepland
+- **Bestandsnaam**: feedback.js
+- **Pad**: /frontend/src/services/
+- **Functionaliteit**: Beheert feedbackgerelateerde operaties aan de clientzijde
+- **Afhankelijkheid**: Authentication Module, Project Management Module, UI Components Module
+
+### Notification Module (Frontend)
+- **Status**: Gepland
+- **Bestandsnaam**: notifications.js
+- **Pad**: /frontend/src/services/
+- **Functionaliteit**: Beheert notificaties aan de clientzijde
+- **Afhankelijkheid**: Authentication Module, UI Components Module
+
+### API Module
+- **Status**: Gepland
+- **Bestandsnaam**: api.js
+- **Pad**: /backend/src/api/
+- **Functionaliteit**: Implementeert API-endpoints
+- **Afhankelijkheid**: Authentication Service, Database Service
+
+### Authentication Service
+- **Status**: Gepland
+- **Bestandsnaam**: authService.js
+- **Pad**: /backend/src/services/
+- **Functionaliteit**: Beheert gebruikersauthenticatie
+- **Afhankelijkheid**: Database Service
+
+### Database Service
+- **Status**: Gepland
+- **Bestandsnaam**: dbService.js
+- **Pad**: /backend/src/services/
+- **Functionaliteit**: Beheert databaseoperaties
+- **Afhankelijkheid**: Geen
+
+### Notification Service
+- **Status**: Gepland
+- **Bestandsnaam**: notificationService.js
+- **Pad**: /backend/src/services/
+- **Functionaliteit**: Beheert het verzenden van notificaties
+- **Afhankelijkheid**: Database Service
+
+### Analytics Service
+- **Status**: Gepland
+- **Bestandsnaam**: analyticsService.js
+- **Pad**: /backend/src/services/
+- **Functionaliteit**: Verzamelt en analyseert gebruiksgegevens
+- **Afhankelijkheid**: Database Service
